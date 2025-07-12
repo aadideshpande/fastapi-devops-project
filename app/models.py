@@ -13,7 +13,7 @@ class Order(BaseModel):
     id: int
     symbol: str
     quantity: int = Field(..., gt=0)
-    side: Literal['buy', 'sell']
+    side: Literal["buy", "sell"]
     price: float = Field(..., ge=0)
 
 
@@ -25,4 +25,4 @@ class PortfolioEntry(BaseModel):
 
 class OrderResponse(BaseModel):
     order: Order
-    status: Literal['accepted', 'rejected']
+    status: Literal["accepted", "rejected"]
