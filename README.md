@@ -34,3 +34,5 @@ Run all tests with:
 ```bash
 coverage run -m unittest discover -s tests -p "test_*.py" && coverage report -m
 coverage html
+```
+
