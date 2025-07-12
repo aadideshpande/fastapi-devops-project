@@ -1,6 +1,6 @@
 import pytest
-import sys, os
 from app.main import PORTFOLIO, ORDERS
+
 
 @pytest.fixture(autouse=True)
 def clear_state():

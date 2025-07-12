@@ -1,6 +1,7 @@
 import unittest
 from datetime import date
-from app.models import Quote, Order, PortfolioEntry
+from app.models import Quote, Order
+
 
 class ModelsTestCase(unittest.TestCase):
     def test_quote_model(self):
@@ -12,6 +13,7 @@ class ModelsTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             # negative quantity should fail
             Order(id=1, symbol="NFLX", quantity=-1, side="buy", price=100)
+
 
 if __name__ == "__main__":
     unittest.main()
