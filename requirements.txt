@@ -1,0 +1,7 @@
+pydantic
+fastapi
+uvicorn[standard]
+coverage
+flake8
+black
+
